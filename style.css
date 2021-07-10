@@ -1,0 +1,132 @@
+/* Remove border around header and other areas
+Border box to make it cleaner and easier */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color to main content */
+body {
+    background-color: #d1e3f1;
+}
+
+/* Leave space on right and left */
+main {
+    padding: 0 60px;
+}
+
+header {
+    background-color: #90c2e7;
+    background-size: cover;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    /* Display flex column to align items in header vertically from each other (Title/subtitle from the nav) */
+    display: flex;
+    flex-direction: column;
+}
+
+#page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+}
+
+.page-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    /* Give some space from the page title above */
+    margin-top: 5px;
+}
+
+.nav {
+    margin: 30px 0 0;
+    list-style-type: none;
+    /* Align the list items horizontally and place on center of page */
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-link {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    /* Remove deault LINK design */
+    text-decoration: none;
+    background-color: #86b6da;
+    margin: 0 2px;
+    padding: 5px;
+}
+
+/* When hovering over nav, change colors */
+.nav-link:hover {
+    background-color: black;
+    color: #90c2e7;
+    padding: 5px;
+}
+
+/* Add space between each section */
+.sections {
+    margin: 15px;
+    padding: 5px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 0;
+}
+
+/* Add space between list and paragraph */
+#about-me p:last-child {
+    margin-top: 10px;
+}
+
+/* Give common font to all paragraph and list content */
+p, li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Add space between paragraphs */
+p {
+    margin-bottom: 10px;
+}
+/* Remove margin/space from under last paragraph */
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* Cleaner and easier to read look for lists */
+ul {
+    line-height: 20px;
+    margin-top: 1px;
+}
+
+/* Add design to links when interacted with */
+a:link {color: black;}
+a:visited {color: black;}
+a:hover {color: rgb(75, 75, 75);}
+a:active {color: rgb(66, 70, 110);}
+
+
+#josh-pic {
+    /* Center image */
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+hr {
+    /* Darker line */
+    border: black 1px solid;
+}
+
+
+footer {
+    background-color: #90c2e7;
+    height: 60px;
+    text-align: center;
+    margin: 30px 0 0 0;
+    padding: 10px 0 0 0;
+}
